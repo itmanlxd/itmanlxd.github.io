@@ -1,48 +1,42 @@
-﻿<!DOCTYPE html>
-<html lang="zh" class="no-js demo-1">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/Helper.js"></script>
-		<script src="js/keyboard.js"></script>
-		<script src="js/const.js"></script>
-		<script src="js/level.js"></script>
-		<script src="js/crackAnimation.js"></script>
-		<script src="js/prop.js"></script>
-		<script src="js/bullet.js"></script>
-		<script src="js/tank.js"></script>
-		<script src="js/num.js"></script>
-		<script src="js/menu.js"></script>
-		<script src="js/map.js"></script>
-		<script src="js/Collision.js"></script>
-		<script src="js/stage.js"></script>
-		<script src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<style type="text/css">
-			#canvasDiv canvas{
-				position:absolute;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<head><h3>操作说明：玩家1：wasd上左下右，space射击；玩家2：方向键，enter射击。n下一关，p上一关。</h3></head>
-			<div class="main clearfix">
-				<div id="canvasDiv" >
-					<canvas id="wallCanvas" ></canvas> 
-					<canvas id="tankCanvas" ></canvas>
-					<canvas id="grassCanvas" ></canvas>
-					<canvas id="overCanvas" ></canvas> 
-					<canvas id="stageCanvas" ></canvas>
-				</div>
-			</div>
-			
-		</div><!-- /container -->
-		<div style="text-align:center;">
-<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
-</div>
-
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.uimaker.com/uploads/allimg/130425/1_130425102139_1.jpg">
+<meta charset="utf-8">
+<title>网址大全</title>
+<style type="text/css">   
+body { 
+            background-image: url("http://pic.58pic.com/58pic/13/76/46/14D58PIChIA_1024.jpg" );
+			background-position: center;
+            background-repeat: no-repeat;background-attachment: fixed;
+			background-size: 100% 100%;
+        }      
+        </style>
+<SCRIPT language=javascript> 
+function mbar(sobj) { 
+var docurl =sobj.options[sobj.selectedIndex].value; 
+if (docurl != "") { 
+open(docurl,'_blank'); 
+sobj.selectedIndex=0; 
+sobj.blur(); 
+} 
+} 
+function touchend(document){
+var obj = document.getElementByIdx_x('id');
+obj.addEventListener('touchmove', function(event) {
+     // 如果这个元素的位置内只有一个手指的话
+    if (event.targetTouches.length == 1) {
+　　　　 event.preventDefault();// 阻止浏览器默认事件，重要 
+        var touch = event.targetTouches[0];
+        // 把元素放在手指所在的位置
+        obj.style.left = touch.pageX-50 + 'px';
+        obj.style.top = touch.pageY-50 + 'px';
+        }
+}, false);}
+</SCRIPT> 
+</head>
+<body> 
+<center><font size="30"face="verdana">欢迎访问李晓东的博客</font></center>
+<center><a href="itmanlxd.github.io/URl.html"><font size="10"face="verdana">网址大全</font></a></center>
+</body>
 </html>
