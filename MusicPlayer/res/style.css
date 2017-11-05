@@ -23,11 +23,11 @@ a {
 }
 
 #player #btns {
-  float: left;
+  float: right;
   width: 120px;
 }
 #player #btns a {
-  line-height:100px;
+  line-height:40px;
 }
 
 #player .icon {
