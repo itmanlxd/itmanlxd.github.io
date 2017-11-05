@@ -1,5 +1,5 @@
 var CONFIG = {
 
-songsUrl: 'itmanlxd.github.io/MusicPlayer/rec/songs.json'
+songsUrl: 'https://raw.githubusercontent.com/hulang1024/MusicPlayer/master/res/songs.json'
 //songsUrl: 'http://og11a17b0.bkt.clouddn.com/songs.json'
 };
