@@ -27,7 +27,7 @@ a {
   width: 120px;
 }
 #player #btns a {
-  line-height: 40px;
+  line-height:100px;
 }
 
 #player .icon {
