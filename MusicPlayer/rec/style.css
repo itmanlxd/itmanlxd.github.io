@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#player {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: 270px;
+  height: 40px;
+  overflow-y: hidden;
+}
+
+#player #btns {
+  float: left;
+  width: 120px;
+}
+#player #btns a {
+  line-height: 40px;
+}
+
+#player .icon {
+  line-height: 40px;
+}
+
+#controls {
+  width: 100%;
+  background: #151515;
+}
+
+#audio {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+}
+
+#playList {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+#songList {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 100%;
+}
+#songList ul li{
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #989898;
+  cursor: pointer;
+}
+#songList ul li.sel {
+  color: #fff;
+}
+
+#lyricView {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 500px;
+  width: 60%;
+  overflow-y: scroll;
+  background: white;
+}
+#lyricView>div {
+  position: relative;
+  top: 0px
+}
+#lyricView>div>p {
+  height: 28px;
+  line-height: 28px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #989898;
+}
+#lyricView p.sel {
+  color: black;
+  font-size: 16px;
+  -webkit-transition: color 0.7s linear;
+  -moz-transition: color 0.7s linear;
+  -o-transition: color 0.7s linear;
+  transition: color 0.7s linear;
+}
+
+#lyricWindow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: 98%;
+  height: 64px;
+  font-size: 3em;
+  text-shadow: 2px 3px 2px black;
+  color: black;
+  text-align: center;
+}
+#lyricWindow.over {
+  border: 1px solid black;
+}
