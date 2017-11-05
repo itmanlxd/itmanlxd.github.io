@@ -23,11 +23,11 @@ a {
 }
 
 #player #btns {
-  float: right;
+  float: left;
   width: 120px;
 }
 #player #btns a {
-  line-height:40px;
+  line-height:80px;
 }
 
 #player .icon {
@@ -60,7 +60,7 @@ a {
 #songList ul li{
   width: 100%;
   overflow: hidden;
-  background: black;
+  background:green;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: #989898;
