@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>计算器</title>
+<link href="/templets/default/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+<script type="text/javascript" src="C:\Desktop\新建文件夹\calc.js"></script>
+</head>
+<body >  
+        <div id="calculator_base" style="display: block">
+		<div id="calculator_base_cup">
+			<div id="calculator_base_container">
+				<table id="base_table_top" class="calculator_table" cellpadding="0" cellspacing="0" border="0">
+					<tbody><tr><td colspan="3" style="height:17px;"></td></tr>
+					<tr>
+						<td colspan="3" style="height:60px;">
+							<input type="text" id="resultIpt" readonly class="displayCss" width="390" value="0" size="17" maxlength="17" style="height:53px;*height:56px;">
+						</td>
+					</tr>
+					<tr class="topRowCss" style="display:none;">
+						<td width="117" valign="middle"></td>
+						<td id="baseEprsPanel" valign="middle" width="290" style="text-align:right"></td>
+						<td width="30"></td>
+					</tr>
+					<tr><td colspan="3" style="height:40px;">&nbsp;</td>
+				  </tr>
+				</tbody></table>
+				<table id="base_table_main" class="calculator_table" align="center" cellpadding="0" cellspacing="0" border="0" style="width:96%;">
+					<tbody><tr>
+						<td><input type="button" value="存储" onclick="calculator.memory(this,0);" class="baseBtnCommonCss"></td>
+						<td><input type="button" value="取存" onclick="calculator.memory(this,1);" class="baseBtnCommonCss"></td>
+						<td><input type="button" id="simpleDel" value="退格" onclick="calculator.remove();" class="baseBtnCommonCss baseBtnCss1"></td>
+						<td><input type="button" id="simpleClearAllBtn" value="清屏" onclick="calculator.clearAll();" class="baseBtnCommonCss baseBtnCss1" style="color: rgb(255, 255, 255); background-position: 0px -44px; "></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="累存" onclick="calculator.memory(this,-1);" class="baseBtnCommonCss"></td>
+						<td><input type="button" value="积存" onclick="calculator.memory(this,-2);" class="baseBtnCommonCss"></td>
+						<td><input type="button" value="清存" onclick="calculator.memory(this,2);" class="baseBtnCommonCss"></td>
+						<td><input type="button" id="simpleDivi" value="÷" onclick="calculator.input(this,3);" class="baseBtnCommonCss baseBtnCss2"></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="simple7" value="7" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple8" value="8" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple9" value="9" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3" style="color: rgb(255, 255, 255); background-position: 0px -44px; "></td>
+						<td><input type="button" id="simpleMulti" value="×" onclick="calculator.input(this,2);" class="baseBtnCommonCss baseBtnCss2"></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="simple4" value="4" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple5" value="5" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple6" value="6" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simpleSubtr" value="-" onclick="calculator.input(this,1);" class="baseBtnCommonCss baseBtnCss2"></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="simple1" value="1" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple2" value="2" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simple3" value="3" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simpleAdd" value="+" onclick="calculator.input(this,0);" class="baseBtnCommonCss baseBtnCss2"></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="simple0" value="0" onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simpleDot" value="." onclick="calculator.input(this,-1);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" value="+/-" onclick="calculator.input(this,-3);" class="baseBtnCommonCss baseBtnCss3"></td>
+						<td><input type="button" id="simpleEqual" value="=" onclick="calculator.input(this,-2);" class="baseBtnCommonCss baseBtnCss4"></td>
+					</tr>
+				</tbody></table>
+</body>
+</html>
+
